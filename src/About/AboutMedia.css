@@ -1,0 +1,9 @@
+@media (max-width:900px){
+    .about-frame{
+        position: relative;
+        margin: 10px auto;
+        width: 100%;
+        height: auto;
+        /* background-color: rgb(42, 48, 46); */
+    }
+}

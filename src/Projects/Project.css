@@ -1,0 +1,112 @@
+.project-frame{
+    position: relative;
+    margin: 10px auto;
+    height: auto;
+    width: 900px;
+}
+.project-title{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0px 0px 5px white; */
+}
+.project-title h2{
+    position: relative;
+    margin: 0px auto;
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    color: var(--fg);
+    font-family: 'Itim', cursive;
+    font-size: 40px;
+    /* border: 2px solid white; */
+    line-height: 40px;
+}
+.project-title h2::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--active);
+    left: 0;
+    bottom:0px;
+}
+
+.projects-display-frame{
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.project-div{
+    position: relative;
+    margin: 10px;
+    width: 240px;
+    cursor: pointer;
+    height:auto;
+    border-radius: 5px;
+    background-color: var(--bg);
+    font-family: 'Itim', cursive;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px var(--fg),0px 0px 5px var(--bg);
+    transition: .2s all ease-in-out;
+}
+.project-div:hover{
+    box-shadow: 0px 0px 2px var(--fg),0px 0px 8px var(--active);
+}
+.project-img-frame{
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 5px inset black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+}
+.project-img-frame img{
+    position: relative;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.project-text{
+    position: relative;
+    margin: 5px auto;
+    width: 90%;
+    height: auto;
+    color: var(--fg);
+    transition: .2s all ease-in-out;
+}
+.project-text h3{
+    margin: 5px auto;
+    border-radius: 5px;
+    background-color: var(--active);
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: var(--fg);
+}
+.project-text p{
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width:900px){
+    .project-frame{
+        width: 100%;
+    }
+}
+a{
+    text-decoration: none;
+}

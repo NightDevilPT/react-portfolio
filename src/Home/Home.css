@@ -1,0 +1,224 @@
+.home-frame{
+    position: relative;
+    margin: 50px auto;
+    width: 900px;
+    height: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* -------------[ Home IIntro Image CSS ]------------- */
+.home-img-frame{
+    position: absolute;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-img-corner1{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 120px;
+    height: 120px;
+    background-color: var(--active);
+    transition: .3s all ease-in-out;
+}
+.home-img-corner2{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 120px;
+    height: 120px;
+    background-color: var(--active);
+    transition: .3s all ease-in-out;
+}
+.home-img-bg{
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background-color: var(--bg);
+    transition: .3s all ease-in-out;
+}
+.home-img{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-image: url("../../public/home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s all ease-in-out;
+}
+.home-img-frame:hover .home-img-corner1{
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height: 150px;
+}
+.home-img-frame:hover .home-img-corner2{
+    bottom: 10px;
+    right: 10px;
+    width: 150px;
+    height: 150px;
+}
+.home-img-frame:hover .home-img-bg{
+    width: 270px;
+    height: 270px;
+}
+.home-img-frame:hover .home-img{
+    width: 260px;
+    height: 260px;
+}
+
+
+/* ---------------[ Home Intro Frame ]---------------- */
+.home-intro-frame{
+    position: absolute;
+    left: 0;
+    width: 600px;
+    height: 350px;
+    /* background-color: rgb(44, 91, 133); */
+}
+.home-name-intro-frame{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 90px;
+}
+.name-intro{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: var(--fg);
+    font-family: 'Itim', cursive;
+}
+.name-highlight{
+    color: var(--active);
+    font-size: 45px;
+}
+
+.home-animated-intro-frame{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 90px;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.home-animated-intro{
+    font-weight: bold;
+    font-size: 38px;
+    text-transform: capitalize;
+    color: var(--fg);
+    font-family: 'Itim', cursive;
+    margin-right: 10px;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 35px;
+    overflow: hidden;
+    /* border: 2px solid black; */
+}
+.wrapper span{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    animation: flip 6s ease-in-out infinite;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Itim', cursive;
+    color: var(--active);
+}
+@keyframes flip{
+    0%{
+      transform: translateY(100px);  
+    }
+    20%{
+        transform: translateY(60px); 
+    }
+    40%{
+        transform: translateY(20px); 
+    }
+    60%{
+        transform: translateY(-20px); 
+    }
+    80%{
+        transform: translateY(-60px); 
+    }
+    100%{
+        transform: translateY(-100px); 
+    }
+}
+.home-short-intro-frame{
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 200px;
+    /* background-color: rgb(71, 85, 97); */
+}
+.home-short-intro{
+    color: var(--fg);
+    font-family: 'Itim', cursive;
+    font-size: 26px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.cv-btn-frame{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.cv-button-btn{
+    position: relative;
+    top: 20px;
+    right: 15px;
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: var(--fg);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+.cv-button-btn:hover{
+    background-color: var(--active);
+}
+.cv-button-btn p{
+    margin-left: 8px;
+    color: var(--bg);
+    font-family: 'Itim', cursive;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: .2s all ease-in-out;
+}
+.download-icon{
+    margin-left: 8px;
+    width: 25px;
+    height: 25px;
+    transition: .2s all ease-in-out;
+    color: var(--bg);
+}
+.cv-button-btn:hover p,
+.cv-button-btn:hover .download-icon{
+    color: var(--fg);
+}
