@@ -94,7 +94,7 @@
     position: relative;
     width: 100%;
     text-align: center;
-    color: var(--fg);
+    color: white;
 }
 .project-text p{
     position: relative;
