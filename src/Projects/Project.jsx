@@ -18,6 +18,12 @@ export function Project(){
             title:"Calculator Web App",
             description:`You can only do simple calculations on this web app.You can also change the theme of this calculator and change the colors of the buttons.`,
             link:"https://nightdevilpt.github.io/react-calculator/"
+        },
+        {
+            img:"./moviehub.png",
+            title:"MovieHub Web App",
+            description:`In this website you can explore about movies and tv shows. You can also read movie/tv data like (runtime, overview, release date, etc) and Top cast and crews profile, name and role.`,
+            link:"https://movie-hub-gilt.vercel.app/"
         }
     ]
     return(
